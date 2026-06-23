@@ -1,0 +1,39 @@
+<svg width="1200" height="680" viewBox="0 0 1200 680" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="680" fill="#F7F8FA"/>
+  <rect x="60" y="52" width="1080" height="576" rx="18" fill="#FFFFFF" stroke="#D9DEE7"/>
+  <text x="96" y="118" fill="#162033" font-family="Arial, sans-serif" font-size="34" font-weight="700">Creative Content Scoring System</text>
+  <text x="96" y="158" fill="#5D6677" font-family="Arial, sans-serif" font-size="18">短视频 / 广告素材内容结构评分表</text>
+  <rect x="96" y="204" width="1008" height="64" rx="8" fill="#172033"/>
+  <text x="122" y="244" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" font-weight="700">视频编号</text>
+  <text x="274" y="244" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" font-weight="700">Hook 30%</text>
+  <text x="430" y="244" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" font-weight="700">证言 40%</text>
+  <text x="584" y="244" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" font-weight="700">卖点 20%</text>
+  <text x="738" y="244" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" font-weight="700">CTA 10%</text>
+  <text x="880" y="244" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" font-weight="700">总分</text>
+  <text x="996" y="244" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="18" font-weight="700">等级</text>
+  <rect x="96" y="282" width="1008" height="74" rx="8" fill="#EEF8F2"/>
+  <text x="122" y="326" fill="#162033" font-family="Arial, sans-serif" font-size="20">#001</text>
+  <text x="304" y="326" fill="#162033" font-family="Arial, sans-serif" font-size="20">8</text>
+  <text x="462" y="326" fill="#162033" font-family="Arial, sans-serif" font-size="20">9</text>
+  <text x="616" y="326" fill="#162033" font-family="Arial, sans-serif" font-size="20">7</text>
+  <text x="768" y="326" fill="#162033" font-family="Arial, sans-serif" font-size="20">6</text>
+  <text x="884" y="326" fill="#0B7A3B" font-family="Arial, sans-serif" font-size="20" font-weight="700">8.0</text>
+  <text x="998" y="326" fill="#0B7A3B" font-family="Arial, sans-serif" font-size="20" font-weight="700">优保</text>
+  <rect x="96" y="370" width="1008" height="74" rx="8" fill="#FFF8E6"/>
+  <text x="122" y="414" fill="#162033" font-family="Arial, sans-serif" font-size="20">#003</text>
+  <text x="304" y="414" fill="#162033" font-family="Arial, sans-serif" font-size="20">7</text>
+  <text x="462" y="414" fill="#162033" font-family="Arial, sans-serif" font-size="20">5</text>
+  <text x="616" y="414" fill="#162033" font-family="Arial, sans-serif" font-size="20">8</text>
+  <text x="768" y="414" fill="#162033" font-family="Arial, sans-serif" font-size="20">4</text>
+  <text x="884" y="414" fill="#A36A00" font-family="Arial, sans-serif" font-size="20" font-weight="700">6.1</text>
+  <text x="998" y="414" fill="#A36A00" font-family="Arial, sans-serif" font-size="20" font-weight="700">普通</text>
+  <rect x="96" y="458" width="1008" height="74" rx="8" fill="#FCEEEE"/>
+  <text x="122" y="502" fill="#162033" font-family="Arial, sans-serif" font-size="20">#002</text>
+  <text x="304" y="502" fill="#162033" font-family="Arial, sans-serif" font-size="20">4</text>
+  <text x="462" y="502" fill="#162033" font-family="Arial, sans-serif" font-size="20">3</text>
+  <text x="616" y="502" fill="#162033" font-family="Arial, sans-serif" font-size="20">2</text>
+  <text x="768" y="502" fill="#162033" font-family="Arial, sans-serif" font-size="20">0</text>
+  <text x="884" y="502" fill="#B42318" font-family="Arial, sans-serif" font-size="20" font-weight="700">2.8</text>
+  <text x="998" y="502" fill="#B42318" font-family="Arial, sans-serif" font-size="20" font-weight="700">低质</text>
+  <text x="96" y="584" fill="#5D6677" font-family="Arial, sans-serif" font-size="17">总分 = Hook * 0.3 + 证言 * 0.4 + 卖点 * 0.2 + CTA * 0.1</text>
+</svg>
