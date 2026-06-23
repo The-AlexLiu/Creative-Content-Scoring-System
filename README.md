@@ -73,9 +73,19 @@
 
 ## 快速使用
 
-1. 复制 `templates/content_scoring_template.csv` 到你的工作表。
-2. 为每条素材填写 `视频编号`、`达人/视频链接`、`Hook 30%`、`证言 40%`、`卖点 20%`、`CTA 10%` 和 `评语建议`。
-3. 在表格中使用公式计算总分，或运行脚本批量计算。
+如果你只是想马上开始给素材打分，推荐直接下载 CSV 模板，然后导入 Google Sheets 或 Excel。
+
+### 方式 1：下载评分模板
+
+1. 打开 [`templates/content_scoring_template.csv`](./templates/content_scoring_template.csv)。
+2. 点击 GitHub 页面右上角的 `Download raw file` 下载 CSV 文件。
+3. 打开 Google Sheets，选择 `文件 -> 导入 -> 上传`，上传这个 CSV。
+4. 导入位置建议选择 `新建电子表格`。
+5. 为每条素材填写 `视频编号`、`达人/视频链接`、`Hook 30%`、`证言 40%`、`卖点 20%`、`CTA 10%` 和 `评语建议`。
+
+Excel 用户可以直接双击打开 CSV，或在 Excel 中选择 `数据 -> 自文本/CSV` 导入。
+
+### 方式 2：在表格里自动算分
 
 Excel / Google Sheet 总分公式：
 
@@ -89,7 +99,9 @@ Excel / Google Sheet 总分公式：
 =IFS(G2>=7,"优保",G2>=4,"普通",G2<4,"低质")
 ```
 
-也可以用脚本批量算分：
+### 方式 3：用脚本批量算分
+
+如果你已经有一批素材评分数据，可以用脚本自动计算 `总分` 和 `分档等级`：
 
 ```bash
 python3 scripts/score_content.py examples/example_input.csv examples/example_scored.csv
