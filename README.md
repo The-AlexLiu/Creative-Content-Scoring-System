@@ -138,76 +138,12 @@
 
 ## 快速使用
 
-如果只是想马上开始给素材打分，可以直接用 CSV 模板。
-
-### 方式 1：用表格评分
-
-1. 打开 [`templates/content_scoring_template.csv`](./templates/content_scoring_template.csv)。
-2. 点击 GitHub 页面右上角的 `Download raw file` 下载 CSV。
-3. 导入 Google Sheets 或 Excel。
-4. 为每条素材填写 `视频编号`、`达人/视频链接`、`Hook 30%`、`证言 40%`、`卖点 20%`、`CTA 10%` 和 `评语建议`。
-
 建议评分表结构：
 
 | 视频编号 | 达人/视频链接 | Hook 30% | 证言 40% | 卖点 20% | CTA 10% | 总分 | 分档等级 | 评语建议 |
 |---|---|---:|---:|---:|---:|---:|---|---|
 | #001 | 示例链接 | 8 | 9 | 7 | 6 | 8.0 | 优保 | Hook 抓人，证言清晰，CTA 可强化 |
 | #002 | 示例链接 | 4 | 3 | 2 | 0 | 2.8 | 低质 | 无结构，无有效演示 |
-
-Excel / Google Sheet 总分公式：
-
-```text
-=C2*0.3+D2*0.4+E2*0.2+F2*0.1
-```
-
-分档公式：
-
-```text
-=IFS(G2>=7,"优保",G2>=4,"普通",G2<4,"低质")
-```
-
-### 方式 2：用脚本批量算分
-
-如果已经有一批素材评分数据，可以用脚本自动计算 `总分` 和 `分档等级`：
-
-```bash
-python3 scripts/score_content.py examples/example_input.csv examples/example_scored.csv
-```
-
-脚本会自动输出：
-
-- `总分`
-- `分档等级`
-- `错误信息`，例如评分为空、评分不是数字、评分超出 0-10
-
----
-
-## 这个项目包含什么
-
-```text
-.
-├── README.md
-├── docs/
-│   └── scoring-rubric.md
-├── templates/
-│   └── content_scoring_template.csv
-├── examples/
-│   ├── example_input.csv
-│   └── example_scored.csv
-├── scripts/
-│   └── score_content.py
-├── assets/
-│   └── scoring-system-preview.svg
-└── LICENSE
-```
-
-| 文件 | 说明 |
-|---|---|
-| [`docs/scoring-rubric.md`](./docs/scoring-rubric.md) | 更细的评分标准，适合团队统一口径 |
-| [`templates/content_scoring_template.csv`](./templates/content_scoring_template.csv) | 可导入表格的评分模板 |
-| [`examples/example_input.csv`](./examples/example_input.csv) | 脚本输入示例 |
-| [`examples/example_scored.csv`](./examples/example_scored.csv) | 脚本输出示例 |
-| [`scripts/score_content.py`](./scripts/score_content.py) | 批量计算总分和分档的 Python 脚本 |
 
 ---
 
@@ -224,32 +160,5 @@ python3 scripts/score_content.py examples/example_input.csv examples/example_sco
 - 素材评分与投放数据的关联分析。
 
 ---
-
-## 后续可以继续优化
-
-这套评分系统目前还是一个基础版本，后续可以继续往几个方向扩展：
-
-- 按不同平台调整权重，例如 Meta、TikTok、小红书、YouTube Shorts；
-- 按不同品类调整评分标准，例如美妆、服饰、家居、电子产品、健康类产品；
-- 增加素材标签体系，例如痛点、场景、证言类型、卖点类型、CTA 类型；
-- 接入投放数据，分析评分和 CTR、CVR、CPA、ROAS 的关系；
-- 增加 AI 自动初评，再由人工复核；
-- 建立素材数据库和可视化看板，沉淀高分素材模式。
-
----
-
-## 我希望作品集传达的能力
-
-这个项目想表达的不是“我会做一个评分表”，而是：
-
-1. 我能把主观的内容判断拆成结构化标准。
-2. 我能把素材生产、投放测试和复盘沉淀连起来。
-3. 我知道评分不能替代投放数据，但可以让测试前后的讨论更清楚。
-4. 我能把达人视频、广告素材、复拍 Brief 和二创判断放进同一套工作流里。
-5. 我能用表格和脚本把方法做成可复用工具，而不是只停留在经验描述。
-
----
-
-## License
 
 MIT License. 仅供学习、研究与作品集展示使用。
