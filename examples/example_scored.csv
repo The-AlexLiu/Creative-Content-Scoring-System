@@ -1,4 +1,4 @@
 视频编号,达人/视频链接,Hook 30%,证言 40%,卖点 20%,CTA 10%,评语建议,总分,分档等级,错误信息
-#001,https://example.com/video-001,8,9,7,6,Hook 抓人，证言清晰，CTA 可强化,8.0,优保,
-#002,https://example.com/video-002,4,3,2,0,无结构，无有效演示,2.8,低质,
-#003,https://example.com/video-003,7,5,8,4,卖点清楚，但证言可信度一般,6.1,普通,
+#001,https://example.com/video-001,8,9,7,6,Hook 抓人，证言清晰，CTA 可强化,8.0,优先验证,
+#002,https://example.com/video-002,4,3,2,0,无结构，无有效演示,2.8,不建议直投,
+#003,https://example.com/video-003,7,5,8,4,卖点清楚，但证言可信度一般,6.1,观察优化,

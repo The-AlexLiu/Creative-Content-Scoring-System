@@ -34,10 +34,10 @@ def parse_score(value: str, field_name: str) -> tuple[float | None, str | None]:
 
 def classify(total_score: float) -> str:
     if total_score >= 7:
-        return "优保"
+        return "优先验证"
     if total_score >= 4:
-        return "普通"
-    return "低质"
+        return "观察优化"
+    return "不建议直投"
 
 
 def score_row(row: dict[str, str]) -> dict[str, str]:
